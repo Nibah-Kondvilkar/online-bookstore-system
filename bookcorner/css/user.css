@@ -1,0 +1,853 @@
+/* 
+  Author: Nibah Kondvilkar;
+  Theme: Food Order Website User;
+  Version: 1.0;
+
+*/
+
+/*  this section below removes default values */
+* {
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* css for all*/
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+    
+}
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+.text-right{
+    text-align: right;
+    font-size: large ;
+} 
+.text-center{
+    text-align: center;
+} 
+.text-beige {
+    color:#f2f2f7;
+}
+.clearfix{
+    clear: both;
+    float: none;
+}
+a{
+    color: #f47930;
+    text-decoration: none;
+}
+a:hover{
+    color: #d15a16;
+}
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.btn-primary{
+    background-color: #9b59b6;
+    color: azure;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    background-color: #8e44ad;
+    color: azure;
+}
+h2{
+    color: #1f2125;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 1.3rem;
+}
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 1%;
+    left: 35%;
+}
+fieldset{
+    border: 1px solid black;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+.error{
+    padding: 2%;
+    font-size: larger;
+    color : red;
+}
+.success{
+    padding: 2%;
+    font-size: larger;
+    color: green;
+}
+/* Shop Books Section */
+.shop-books {
+    padding: 40px 0;
+}
+
+.shop-books h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Book Box Layout */
+.book-box {
+    width: 20%;
+    float: left;
+    margin: 12px;
+    background: #ffb685;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.book-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Book Image */
+.book-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+/* Book Details */
+.book-details h4 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.book-price {
+    font-size: 18px;
+    color: #ff4757;
+    font-weight: bold;
+}
+
+.book-author {
+    font-size: 16px;
+    color: #525050;
+    margin-bottom: 10px;
+}
+.inline-form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 2px;
+}
+/* Button Styling */
+.book-details .btn {
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*Book Detail page*/
+.book-detail {
+    padding: 50px 0;
+}
+
+.book-detail-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book-img {
+    flex: 1;
+    max-width: 40%;
+}
+
+.book-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.book-info {
+    flex: 1;
+    max-width: 55%;
+}
+
+.book-info h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.author {
+    font-size: 18px;
+    color: #363333;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #d32f2f;
+}
+
+.stock {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+form {
+    margin-top: 15px;
+}
+
+form input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #e65100;
+}
+
+.book-description {
+    margin-top: 20px;
+}
+
+.book-description h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+
+/*related book */
+.related-books {
+    padding: 20px 0;
+}
+
+.related-books h2 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.related-books-box {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.related-book {
+    width: 22%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    background: #ffb685;
+}
+
+.related-book:hover {
+    transform: scale(1.05);
+}
+
+.related-book a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.related-book-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.related-book-info h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.related-book-info .price {
+    font-size: 16px;
+    color: #d32f2f;
+    font-weight: bold;
+}
+.related-book-info .author {
+    font-size: 18px;
+    color: #363333;
+}
+
+/* navbar section */
+.logo{
+    width: 14%;
+    float: left;
+}
+.menu {
+    line-height: 60px;
+   
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline;
+    padding: 0 5px;
+    font-weight: bold;
+}
+/*  food search section */
+.book-search{
+    background-image: url(../images/book.jpeg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5% 0; 
+
+}
+.book-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+/*about page*/
+.about {
+    padding: 40px 0;
+    background-color: #dda876;
+}
+
+.about .container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.about-text {
+    text-align: left;
+    max-width: 550px;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.about-list li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.about p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+}
+/* css for categories */
+.Categories{
+       padding: 4% 0;
+}
+.box-3{
+    width: 28%;
+    float:left;
+    margin: 2%;
+}
+
+/*css for social*/
+.Social ul{
+  list-style-type: none;
+}
+.Social ul li{
+    display: inline;
+    padding: 1%;
+}
+/* css for Order Section */
+.order-section{
+    background-image: url(../images/book.jpeg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.order{
+    width: 50%;
+    margin: 0 auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 2%; 
+    font-weight: bold;
+}
+/*css for cart*/
+.cart{
+    width: 80%;
+    padding-left: 20%;
+    text-align: left;
+    padding-bottom: 2%;
+    
+}
+table tr th{
+    border-bottom: 1px solid black;
+    padding: 1%;
+}
+.cart-qty
+{
+    padding-left: 5%;
+}
+.cart-tol
+{
+    padding-left: 3%;
+}
+.cartbtn{
+    background-color: #6ffaee;
+    padding: 2px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin:0 auto;
+}
+.cartbtn-btn{
+    background-color: #9b59b6;
+    color: azure;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    display: flex;
+}
+.cart-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    width: 100%;
+}
+.remove-all {
+    background-color: red;
+    color: white;
+}
+
+/*css for contact us page*/
+#contact-page {
+    background-color: #dda876;
+    background-position: center;
+    background-size: cover;
+    color: #000;
+    padding: 10px;
+    height: 70vh;
+    margin: 0;
+}
+#contact-page .heading{
+    text-align: center;
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+#contact-page .container2 {
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+#contact-page .contact-info {
+    font-size: large;
+    float: left;
+    width: 40%;
+}
+
+#contact-page .contact-form {
+    float: right;
+    width: 55%;
+}
+
+#contact-page .contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-page .contact-form input, 
+#contact-page .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#contact-page .contact-form button {
+    padding: 10px;
+    background-color: #d4701e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#contact-page .follow-us {
+    clear: both;
+    margin-top: 30px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#contact-page .social-media a {
+    display: inline;
+    color: #f86d10;
+    margin:  5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact-page .social-media a:hover {
+    text-decoration: none;
+    color: #f06508;
+}
+
+#contact-page .message-box-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#contact-page .message-box {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#contact-page .ok-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ca782b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/*css for pagination*/
+.pagination {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+
+.pagination a, .pagination span {
+    color: #6c757d; 
+    float: left;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #e0e2e4; 
+}
+
+.pagination a:hover {
+    background-color: #ddc9c9;
+    cursor: pointer;
+}
+
+.pagination a.active {
+    background-color: #ff6f00; 
+    color: white; 
+    border: 1px solid #ff6f00;
+}
+
+.pagination a.disabled {
+    pointer-events: none;
+    background-color: #e9ecef; 
+    color: #6c757d;
+}
+
+.pagination a.prev, .pagination a.next {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.pagination span {
+    padding: 10px 15px;
+    cursor: default;
+}
+.Footer{
+    font-size: medium;
+}
+.Footer a{
+    color: #0d0b7a;
+}
+/* Profile & Change Password Container */
+.profile-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #daa16b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Section Title */
+.profile-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Form Styling */
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Fields */
+.profile-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s ease-in-out;
+}
+
+.profile-form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Label Styling */
+.profile-form label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Submit Button */
+.profile-form .btn-update {
+    background: #ff6f00;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.profile-form .btn-update:hover {
+    background: #dd6000;
+}
+
+/* Modal Styling (Using Your Existing CSS) */
+.modal.show {
+    display: block;
+}
+/* css for login and register*/
+.lgcontainer {
+    background-color: rgb(212, 154, 99);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 4% auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* Form element styles */
+.lgcontainer h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #333;
+}
+
+.lgcontainer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.lgcontainer input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.lgcontainer button {
+    padding: 10px;
+    background-color: #744315;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.lgcontainer button:hover {
+    background-color: #694a27;
+}
+
+.lgcontainer p {
+    margin-top: 10px;
+    color: #202020;
+}
+
+.lgcontainer a {
+    color: #795220;
+    text-decoration: none;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*justify-content: center;
+    align-items: center;*/
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    border: 1px solid black;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.show {
+    display:block;
+}
+
+.modal-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #ca782b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media only screen and(max-width:768px) {
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+    .menu ul{
+        text-align: center;
+    }
+    .food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 2%;
+    }
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+    .food-search{
+        padding: 10% 0;
+    }
+    .Categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10% ;
+    }
+    .box-3{
+        width: 90%;
+        margin: 4% auto;
+    }
+    .Food-Menu{
+        padding: 20% 0;
+    }
+    .Food-Menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .Social{
+        padding: 5% 0;
+    }
+    .order{
+        width: 100%;
+    }
+}
