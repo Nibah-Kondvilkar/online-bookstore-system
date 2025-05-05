@@ -18,13 +18,13 @@ function sendEmail($recipientEmail, $recipientName) {
       $mail->isSMTP();                                          
       $mail->Host       = 'smtp.gmail.com';                     
       $mail->SMTPAuth   = true;                                 
-      $mail->Username   = 'kondvilkarnibah@gmail.com';  // my Gmail
-      $mail->Password   = 'ubtw gyvu eneq pwhf';    // App Password
+      $mail->Username   = 'your email';  // my Gmail
+      $mail->Password   = 'pass';    // App Password
       $mail->SMTPSecure = 'tls';                                
       $mail->Port       = 587;                                  
 
       // Recipients
-      $mail->setFrom('kondvilkarnibah@gmail.com', 'Book Corner');
+      $mail->setFrom('email', 'Book Corner');
       $mail->addAddress($recipientEmail, $recipientName);        
 
       // Content
