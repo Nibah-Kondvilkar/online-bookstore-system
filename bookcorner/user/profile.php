@@ -64,8 +64,8 @@ if (isset($_POST['update_profile'])) {
                 $mail->isSMTP();
                 $mail->Host = 'smtp.gmail.com';
                 $mail->SMTPAuth = true;
-                $mail->Username = 'kondvilkarnibah@gmail.com';  // Your email
-                $mail->Password = 'ubtw gyvu eneq pwhf';    // Your app password
+                $mail->Username = 'your email';  // Your email
+                $mail->Password = 'your pass';    // Your app password
                 $mail->SMTPSecure = 'tls';
                 $mail->Port = 587;
 
@@ -111,12 +111,12 @@ if (isset($_POST['update_password'])) {
                     $mail->isSMTP();
                     $mail->Host = 'smtp.gmail.com';
                     $mail->SMTPAuth = true;
-                    $mail->Username = 'kondvilkarnibah@gmail.com';  // Your email
-                    $mail->Password = 'ubtw gyvu eneq pwhf';    // Your app password
+                    $mail->Username = 'email';  // Your email
+                    $mail->Password = 'pass';    // Your app password
                     $mail->SMTPSecure = 'tls';
                     $mail->Port = 587;
 
-                    $mail->setFrom('kondvilkarnibah@gmail.com', 'Book Corner');
+                    $mail->setFrom('email', 'Book Corner');
                     $mail->addAddress($user['email'], $user['full_name']);
 
                     $mail->isHTML(true);
