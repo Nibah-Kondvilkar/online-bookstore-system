@@ -59,14 +59,14 @@ if (isset($_SESSION['user_id'])) {
                     $mail->isSMTP();
                     $mail->Host = 'smtp.gmail.com';
                     $mail->SMTPAuth = true;
-                    $mail->Username = 'kondvilkarnibah@gmail.com'; // My Gmail
-                    $mail->Password = 'ubtw gyvu eneq pwhf';   //  Gmail App password
+                    $mail->Username = 'gmail'; // My Gmail
+                    $mail->Password = 'your pass';   //  Gmail App password
                     $mail->SMTPSecure = 'tls';
                     $mail->Port = 587;
 
                     // Recipients
                     $mail->setFrom($email, $name);
-                    $mail->addAddress('kondvilkarnibah@gmail.com'); //  email to receive the feedback
+                    $mail->addAddress('email'); //  email to receive the feedback
 
                     // Content
                     $mail->isHTML(true);
