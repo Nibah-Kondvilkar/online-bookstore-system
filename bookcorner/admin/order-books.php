@@ -125,7 +125,7 @@ document.getElementById('razorpay-button').onclick = function(e){
     var paymentAmount = document.querySelector("input[name='payment_amount']").value;
     
     var options = {
-        "key": "rzp_test_ZBIjyCh2OE2cGv",  // Replace with your Razorpay key
+        "key": "abc",  // Replace with your Razorpay key
         "amount": paymentAmount * 100, // Amount in paise
         "currency": "INR",
         "name": "Book Corner",
@@ -136,7 +136,7 @@ document.getElementById('razorpay-button').onclick = function(e){
         },
         "prefill": {
             "name": "Nibah", 
-            "email": "kondvilkarnibah@gmail.com"
+            "email": "your email"
         },
         "theme": {
             "color": "#3399cc"
