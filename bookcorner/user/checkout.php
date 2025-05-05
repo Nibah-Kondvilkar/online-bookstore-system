@@ -102,19 +102,19 @@ if (isset($_POST['confirm_order'])) {
             $mail->isSMTP();                                          
             $mail->Host       = 'smtp.gmail.com';                     
             $mail->SMTPAuth   = true;                                 
-            $mail->Username   = 'kondvilkarnibah@gmail.com';  // my Gmail
-            $mail->Password   = 'ubtw gyvu eneq pwhf';    // App Password
+            $mail->Username   = 'gmail';  // my Gmail
+            $mail->Password   = 'pass';    // App Password
             $mail->SMTPSecure = 'tls';                                
             $mail->Port       = 587;                                  
 
             // Recipients
-            $mail->setFrom('kondvilkarnibah@gmail.com', 'Book Corner');
+            $mail->setFrom('youremail', 'Book Corner');
             $mail->addAddress($user_email);        
 
             // Content
             $mail->isHTML(true);                                      
             $mail->Subject = 'Order Confirmation';
-            $mail->Body = "Dear $user_name,<br>Thankyou for your order.<br><br>Order Details:<br>Food: $title_str<br>Quantity: $quantity_str <br>Total Price: ₹$total <br><br>Best regards,<br>The Book Corner Team";
+            $mail->Body = "Dear $user_name,<br>Thankyou for your order.<br><br>Order Details:<br>Book: $title_str<br>Quantity: $quantity_str <br>Total Price: ₹$total <br><br>Best regards,<br>The Book Corner Team";
 
             $mail->send();
              echo 'message has been send';
@@ -244,7 +244,7 @@ document.getElementById('razorpay-button').onclick = function(e){
     
     
     var options = {
-        "key": "rzp_test_ZBIjyCh2OE2cGv",  // Replace with your Razorpay key
+        "key": "abc",  // Replace with your Razorpay key
         "amount":totalAmount * 100, // Amount in paise
         "currency": "INR",
         "name": "Book Corner",
