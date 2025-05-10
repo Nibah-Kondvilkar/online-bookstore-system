@@ -39,8 +39,8 @@ CREATE TABLE `tbl_admin` (
 --
 
 INSERT INTO `tbl_admin` (`id`, `full_name`, `username`, `password`) VALUES
-(1, 'Admin', 'admin', '867828277d8660bbb44ebbd860d2f020'),
-(2, 'Nibah Kondvilkar', 'nibah', 'f2191f9974f86242703de889c50651cb');
+(1, 'Admin', 'admin', '867828277d8660bbb44ebbd860d2f020');
+
 
 -- --------------------------------------------------------
 
