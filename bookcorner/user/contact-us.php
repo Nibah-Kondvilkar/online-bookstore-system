@@ -59,7 +59,7 @@ if (isset($_SESSION['user_id'])) {
                     $mail->isSMTP();
                     $mail->Host = 'smtp.gmail.com';
                     $mail->SMTPAuth = true;
-                    $mail->Username = 'gmail'; // My Gmail
+                    $mail->Username = 'yourgmail'; // My Gmail
                     $mail->Password = 'your pass';   //  Gmail App password
                     $mail->SMTPSecure = 'tls';
                     $mail->Port = 587;
