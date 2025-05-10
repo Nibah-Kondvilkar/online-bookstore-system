@@ -34,12 +34,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $mail->isSMTP();
                 $mail->Host = 'smtp.gmail.com';
                 $mail->SMTPAuth = true;
-                $mail->Username   = 'kondvilkarnibah@gmail.com';  // Your Gmail
-                $mail->Password   = 'ubtw gyvu eneq pwhf';    // App Password
+                $mail->Username   = '//';  // Your Gmail
+                $mail->Password   = '//';    // App Password
                 $mail->SMTPSecure = 'tls';
                 $mail->Port = 587;
 
-                $mail->setFrom('kondvilkarnibah@gmail.com', 'Book Corner');
+                $mail->setFrom('//email', 'Book Corner');
                 $mail->addAddress($email);
 
                 $mail->isHTML(true);
