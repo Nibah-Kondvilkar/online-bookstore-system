@@ -69,7 +69,7 @@ if (isset($_POST['update_profile'])) {
                 $mail->SMTPSecure = 'tls';
                 $mail->Port = 587;
 
-                $mail->setFrom('kondvilkarnibah@gmail.com', 'Book Corner');
+                $mail->setFrom('//your email', 'Book Corner');
                 $mail->addAddress($email, $full_name);
 
                 $mail->isHTML(true);
