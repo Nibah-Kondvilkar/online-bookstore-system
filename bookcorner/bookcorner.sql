@@ -160,25 +160,10 @@ CREATE TABLE `tbl_order` (
 --
 
 INSERT INTO `tbl_order` (`id`, `user_id`, `orders`, `price`, `quantity`, `total`, `payment_mode`, `paid`, `order_date`, `status`, `user_name`, `user_contact`, `user_email`, `user_address`) VALUES
-(3, 1, 'A Man Called Ove', '350', '2', 700.00, 'Online', 'Yes', '2025-02-25 19:23:48', 'Delivered', 'Nibah Kondvilkar', '8010909048', 'nibahkondvilkar@gmail.com', 'Dapoli'),
-(5, 1, 'Dune', '150', '1', 150.00, 'COD', 'Yes', '2025-02-26 13:06:27', 'Delivered', 'Arshin Mukadam', '9156967865', 'nibahkondvilkar@gmail.com', 'Dapoli'),
-(6, 2, 'A Man Called Ove,The Hobbit', '350,250', '1,1', 600.00, 'COD', 'No', '2025-02-27 14:15:33', 'Cancelled', 'Arshin Mukadam', '9156957865', 'Mukadamarshin@gmail.com', 'Kalam Gali'),
-(7, 3, 'The Kite Runner,A River Enchanted', '299,399', '1,1', 698.00, 'Online', 'Yes', '2025-02-28 08:32:14', 'Delivered', 'Hibah Kondvilkar', '7756789033', 'hibahkondvilkar123@gmail.com', 'Nasheman colony,Dapoli'),
-(8, 4, 'You Are Fatally Invited,The Kite Runner', '399,299', '1,1', 698.00, 'COD', 'Yes', '2025-02-28 10:55:48', 'Delivered', 'Aqsa Sarang', '9308958642', 'aqsafarid2772@gmail.com', 'Dapoli'),
-(9, 1, 'A River Enchanted,Atomic Habits', '399,450', '1,1', 849.00, 'COD', 'Yes', '2025-03-08 11:04:52', 'Delivered', 'Nibah Kondvilkar', '8010909048', 'nibahkondvilkar@gmail.com', 'Dapoli'),
-(10, 5, 'Web Development,The Women In The Walls', '349,299', '1,1', 648.00, 'Online', 'Yes', '2025-03-13 18:37:52', 'Delivered', 'Sultan Hussain', '9112970643', 'Sultanfdh22@gmail.com', 'Family Mal,Dapoli'),
-(11, 5, 'A River Enchanted,The Last Human', '399,300', '1,1', 699.00, 'COD', 'Yes', '2025-03-16 19:24:49', 'Delivered', 'Praful Vadar', '7734198809', 'praful@gmail.com', 'Dapoli'),
-(12, 5, 'The Guide,This Is How You Heal', '299,299', '1,1', 598.00, 'Online', 'Yes', '2025-03-20 19:40:22', 'Delivered', 'Uwes Kulabkar', '8997067890', 'uwes321@gmail.com', 'Dapoli'),
-(13, 3, 'Mr. Penumbra\'s 24-Hour Bookstore,The Hobbit', '399,250', '1,1', 649.00, 'Online', 'Yes', '2025-03-23 13:44:51', 'Delivered', 'Hibah Kondvilkar', '7756789033', 'hibahkondvilkar123@gmail.com', 'Nasheman colony,Dapoli'),
-(14, 3, 'You Are Fatally Invited,The Women In The Walls', '399,299', '1,1', 698.00, 'Online', 'Yes', '2025-03-26 13:55:14', 'Delivered', 'Zainab Ainarkar', '8860409877', 'zainab@gmail.com', 'Murud'),
-(15, 2, 'The Mountain Is You', '289', '1', 289.00, 'COD', 'No', '2025-04-03 14:03:11', 'Cancelled', 'Arshin Mukadam', '9156957865', 'Mukadamarshin@gmail.com', 'Kalam Gali'),
-(16, 2, 'A River Enchanted,The Silent Patient', '399,299', '1,1', 698.00, 'COD', 'Yes', '2025-04-06 14:13:19', 'Delivered', 'Zahin Mukadam', '7654320978', 'zahin12@gmail.com', 'Dapoli'),
-(17, 6, 'A Man Called Ove', '350', '1', 350.00, 'COD', 'Yes', '2025-04-11 14:20:41', 'Delivered', 'Arshiya Kondvilkar', '9110080766', 'arshiyakondvilkar12@gmail.com', 'Dapoli'),
-(18, 6, 'Dune,The Exorcist', '250,289', '1,1', 539.00, 'Online', 'Yes', '2025-04-11 14:24:54', 'Delivered', 'Rafiya Kondvilkar', '9545608096', 'rafiya@gmail.com', 'Dapoli'),
-(19, 7, 'Into Thin Air', '299', '1', 299.00, 'Online', 'Yes', '2025-04-12 14:31:16', 'Delivered', 'Misbah Kazi', '9458908849', 'misbahk@gmail.com', 'Dapoli'),
-(20, 7, 'Station Eleven,The Last Human', '250,300', '1,1', 550.00, 'Online', 'Yes', '2025-04-13 14:34:30', 'On Delivery', 'Rutuja Tambe', '9980786654', 'rutuja@gmail.com', 'Jalgoan'),
-(21, 1, 'The Mountain Is You,A Thousand Splendid Suns', '289,350', '1,1', 639.00, 'Online', 'Yes', '2025-04-14 19:47:48', 'Pending', 'Nibah Kondvilkar', '8010909048', 'nibahkondvilkar@gmail.com', 'Dapoli'),
-(22, 1, 'Atomic Habits', '450', '1', 450.00, 'COD', 'No', '2025-04-15 10:45:21', 'Pending', 'Nibah Kondvilkar', '8010909048', 'nibahkondvilkar@gmail.com', 'Dapoli');
+(1, 1, 'A Man Called Ove', '350', '2', 700.00, 'Online', 'Yes', '2025-02-25 19:23:48', 'Delivered', 'Nibah Kondvilkar', '8010909048', 'nibahkondvilkar12@gmail.com', 'xyz'),
+(2, 1, 'Dune', '150', '1', 150.00, 'COD', 'Yes', '2025-02-26 13:06:27', 'Delivered', 'Arshin Mukadam', '9156967865', 'nibahkondvilkar12@gmail.com', 'abc'),
+(3, 1, 'A River Enchanted,Atomic Habits', '399,450', '1,1', 849.00, 'COD', 'Yes', '2025-03-08 11:04:52', 'Delivered', 'Nibah Kondvilkar', '8010909048', 'nibahkondvilkar12@gmail.com', 'xyz'),
+(4, 1, 'Atomic Habits', '450', '1', 450.00, 'COD', 'No', '2025-04-15 10:45:21', 'Pending', 'Nibah Kondvilkar', '8010909048', 'nibahkondvilkar12@gmail.com', 'xyz');
 
 -- --------------------------------------------------------
 
@@ -276,13 +261,7 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`id`, `full_name`, `username`, `contact`, `email`, `address`, `password`, `otp`, `otp_expiry`, `created_at`) VALUES
-(1, 'Nibah Kondvilkar', 'nibah', '8010909048', 'nibahkondvilkar@gmail.com', 'Dapoli', 'f2191f9974f86242703de889c50651cb', 0, '0000-00-00 00:00:00', '2025-02-23 17:26:52'),
-(2, 'Arshin Mukadam', 'arshin', '9156957865', 'Mukadamarshin@gmail.com', 'Kalam Gali', 'f8d3c6d2aeb6e37c5b2e11b4ffbeec69', 0, '0000-00-00 00:00:00', '2025-02-24 13:13:18'),
-(3, 'Hibah Kondvilkar', 'hibah', '7756789033', 'hibahkondvilkar123@gmail.com', 'Nasheman colony,Dapoli', 'fd7684808fc2e4f451b55d28fd493df5', 0, '0000-00-00 00:00:00', '2025-03-25 07:18:32'),
-(4, 'Aqsa Sarang', 'aqsa', '9308958642', 'aqsafarid2772@gmail.com', 'Dapoli', '30417b5ea40131eed91095d90b5d270b', 0, '0000-00-00 00:00:00', '2025-03-26 09:22:06'),
-(5, 'Sultan Hussain', 'sultan', '9112970643', 'Sultanfdh22@gmail.com', 'Family Mal,Dapoli', 'f08bcef10dd00fef60e0e687f5aa5e59', 0, '0000-00-00 00:00:00', '2025-03-13 16:35:11'),
-(6, 'Arshiya Kondvilkar', 'arshiya', '9110080766', 'arshiyakondvilkar12@gmail.com', 'Dapoli', '2d1a19030d8f492851ca81d388365246', 0, '0000-00-00 00:00:00', '2025-04-08 17:59:37'),
-(7, 'Misbah Kazi', 'misbah', '9458908849', 'misbahk@gmail.com', 'Dapoli', '7dba53dfa4e24db05e61639461cf7c91', 0, '0000-00-00 00:00:00', '2025-04-12 12:27:44');
+(1, 'Nibah Kondvilkar', 'nibah', '8010909048', 'nibahkondvilkar12@gmail.com', 'xyz', 'f2191f9974f86242703de889c50651cb', 0, '0000-00-00 00:00:00', '2025-02-23 17:26:52');
 
 --
 -- Indexes for dumped tables
